@@ -1,7 +1,7 @@
 # Hello!
-Hi my name is Gary! 
+Hi my name is Gary! 'std::cout << "Hello World!";'
 
-![Picture of me](Headshot.jpg)
+> ![Picture of me](Headshot.jpg)
 
 I'm currently a second-year Computer Science major at [UCSD](https://ucsd.edu/). Right now I have been trying to work towards creating meaningful projects to hopefully eventually lead to an internship. 
 
