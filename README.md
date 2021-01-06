@@ -1,5 +1,7 @@
 # Hello!
-Hi my name is Gary! `std::cout << "Hello World!";`
+Hi my name is Gary! 
+
+`std::cout << "Hello World!";`
 
 > ![Picture of me](img/Headshot.jpg)https://github.com/gjsimkins/gjsimkins.github.io/blob/main/README.md#skills
 
