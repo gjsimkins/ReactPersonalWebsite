@@ -19,6 +19,6 @@ I'm currently a second-year Computer Science major at [UCSD](https://ucsd.edu/).
   - C++
   - C
 - Basic 
-  - HTMl
+  - HTML
   - CSS
   - Javascript
