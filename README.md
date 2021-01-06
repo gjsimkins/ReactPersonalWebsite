@@ -1,5 +1,8 @@
 # Hello!
 Hi my name is Gary! 
+
+[Happy Face](happyface.jpeg)
+
 I'm currently a second-year Computer Science major at [UCSD](https://ucsd.edu/). Right now I have been trying to work towards creating meaningful projects to hopefully eventually lead to an internship. 
 
 ## Projects
