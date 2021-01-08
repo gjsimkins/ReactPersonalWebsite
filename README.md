@@ -5,7 +5,7 @@
 
 > ![Picture of me](img/Headshot.jpg)
 
-I'm currently a second-year Computer Science major at [UCSD](https://ucsd.edu/). I like to play video games (A lot of FPS), basketball, and pretty much any type of game you can find. Right now I have been trying to work towards creating meaningful projects I enjoy to hopefully eventually lead to an internship. 
+I'm currently a second-year Computer Science major at [UCSD](https://ucsd.edu/). I like to play video games (A lot of FPS), basketball, and pretty much any type of game you can find. Right now I have been trying to work towards creating meaningful projects I enjoy in order to hopefully eventually get an internship. 
 
 ## Projects
 > *Sadly I have no remarkable projects yet :(. This will be populated more eventually...*
