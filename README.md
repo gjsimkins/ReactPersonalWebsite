@@ -11,7 +11,7 @@ I'm currently a second-year Computer Science major at [UCSD](https://ucsd.edu/).
 > *Sadly I have no remarkable projects yet :(. This will be populated more eventually...*
 - [x] Pokemon Generator
   - Participated in workshop where we created a Pokemon creator website using the MERN stack. 
-- [ ] ~~?~~
+- [ ] ~~TBD~~
 
 ## Skills
 - Proficient
