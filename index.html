@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gary's Website</title> 
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+        <style>
+            body {
+                font-family: "Roboto Condensed", serif;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+        </style>
+        <!--
+        I accidentally included this in lab 2 so I'm just omitting it for lab 3
+        <script>
+            is_open = false;
+            function showContent() {
+                if(!is_open){
+                    var temp = document.getElementsByTagName("template")[0];
+                    var clon = temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                    is_open = true;
+                }
+                else{
+                    var c = document.getElementById("my-canvas");
+                    var ctx = c.getContext("2d");
+                    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+                    grd.addColorStop(0, "red");
+                    grd.addColorStop(1, "white");
+                    ctx.fillStyle = grd;
+                    ctx.fillRect(10, 10, 150, 80);
+                    ctx.strokeText("Wow you found the secret", 10, 50);
+                }
+            }
+        </script>
+        -->
+    </head>
+    <body>
+        <header>
+            <h1>Hello!</h1>
+            <figure class="headshot">
+                <picture>
+                    <img src="media/headshot.jpg" alt="Picture of me" width="200">
+                </picture>
+            </figure>
+            <div class="intro">
+                <p>
+                    <b>Hi!</b> I'm Gary Simkins. I'm currently a second-year Computer Science major at 
+                    <a href="https://ucsd.edu/">UCSD</a>. I like to play video games (a lot of FPS), 
+                    basketball, and pretty much any type of game you can find. 
+                    Right now I have been trying to work towards creating meaningful projects 
+                    I enjoy in order to hopefully eventually get an internship.
+                </p>
+            </div>
+            <p class="fixed">
+                Have a nice day :)
+            </p>
+        </header>
+        <main>
+            <div class="info">
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <hr>
+                    <aside>
+                        <i>
+                            Sadly I have no remarkable projects yet.<br>
+                            This will be populated more eventually...
+                        </i>
+                    </aside>
+                    <ol>
+                        <li>Pokemon Generator</li>
+                        <li>TBD</li>
+                    </ol>
+                </div>  
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <hr>
+                    <ul>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+            </div>
+            <details class="contact-me">
+                <summary>Contact Me</summary>
+                <p>My E-mail: garyjsimkins@gmail.com</p>
+                <form>
+                    <h4>Form</h4>
+                    <div class="form-row">
+                        <label for="name">Your name: </label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Your E-mail: </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone-number">Your phone number: </label>
+                        <input type="tel" name="phone-number" id="phone-number">
+                    </div>
+                    <div class="form-row">
+                        <label for="comments">Comments: </label>
+                        <textarea name="comments" id="comments" rows="5" cols="35"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="todays-date">Today's date: </label>
+                        <input type="date" id="todays-date" name="todays-date">
+                    </div>
+                    <em>The rest are for fun :)</em>
+                    <div class="form-row">
+                        <fieldset>
+                            <legend>Favorite 1st Genertaion Pokemon Starter</legend>
+                            <input type="radio" id="squirtle" name="starter">
+                            <label for="squirtle">Squirtle</label><br/>
+
+                            <input type="radio" id="charmander" name="starter">
+                            <label for="charmander">Charmander</label><br/>
+
+                            <input type="radio" id="bulbasaur" name="starter">
+                            <label for="bulbasaur">Bulbasaur</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-row">
+                        <label for="played-games">Here are some games I like playing. Which one is your favorite?</label>
+                        <select id="played-games">
+                            <optgroup label="PC">
+                                <option>CSGO</option>
+                                <option>Valorant</option>
+                                <option>Apex Legends</option>
+                                <option>Minecraft</option>
+                                <option>Terraria</option>
+                                <option>Brawlhalla</option>
+                            </optgroup>
+                            <optgroup label="Switch">
+                                <option>Super Smash Bros: Ultimate</option>
+                                <option>The Legend of Zelda: Breath of the Wild</option>
+                                <option>Super Mario Odyssey</option>
+                            </optgroup>
+                            <optgroup label="Virtual Reality">
+                                <option>Beat Saber</option>
+                                <option>Pistol Whip</option>
+                                <option>Superhot</option>
+                            </optgroup>
+                            <option>I don't like/know any of these games</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="fav-ice-cream">Whats your favorite ice cream flavor?</label>
+                        <input list="flavors" name="fav-ice-cream" id="fav-ice-cream" />
+                        <datalist id="flavors">
+                            <option value="Chocolate">
+                            <option value="Vanilla">
+                            <option value="Strawberry">
+                            <option value="Rocky Road">
+                            <option value="Macha">
+                            <option value="Chocolate Chip">
+                            <option value="Other">
+                        </datalist>
+                    </div>
+                    <div class="form-row">
+                        <label for="fav-color">Whats your favorite color?</label>
+                        <input type="color" name="fav-color" id="fav-color">
+                    </div>
+                    <div class="form-row">
+                        <label for="rating-games">How much do you play video games?</label>
+                        <input type="range" min="0" max="100" name="rating-games" id="rating-games">
+                    </div>
+                    <div class="form-row">
+                        <label for="agreement">By clicking this box I understand that this form actually did nothing <br>and the data will not even be stored.</label>
+                        <input type="checkbox" name="agreement" id="agreement" required>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </details>
+            <div class="Schedule">
+                <table style="border: solid black; border-width: 4px;"> 
+                    <caption style="caption-side: bottom;"><strong><i>I also have work that changes every week.</i></strong></caption>
+                    <colgroup>
+                        <col class="sunday">
+                        <col class="monday">
+                        <col class="tuesday">
+                        <col class="wednesday">
+                        <col class="thursday">
+                        <col class="friday">
+                        <col class="saturday">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="7">Schedule</th>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Monday</td>
+                            <td>Tuesday</td>
+                            <td>Wednesday</td>
+                            <td>Thursday</td>
+                            <td>Friday</td>
+                            <td>Sunday</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> </td>
+                            <td>9am - PHYS2A</td>
+                            <td> </td>
+                            <td>9am - PHYS2A</td>
+                            <td> </td>
+                            <td>9am - PHYS2A</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>10am - CSE110</td>
+                            <td> </td>
+                            <td>10am - CSE110</td>
+                            <td> </td>
+                            <td>10am - CSE110</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td>11am - CSE101</td>
+                            <td> </td>
+                            <td>11am - CSE101</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td>3pm - CSE110</td>
+                            <td> </td>
+                            <td>3:30pm - PHYS2A</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>5pm - CSE105</td>
+                            <td> </td>
+                            <td>5pm - CSE105</td>
+                            <td> </td>
+                            <td>5pm - CSE105</td>
+                            <td> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="media">
+                <h2>Media</h2>
+                <hr>
+                <figure>
+                    <figcaption>A video I took at La Jolla Shores</figcaption>
+                    <video controls muted width="500">
+                        <source src="media/beach_vid.mp4" type="video/mp4">
+                        <source src="media/beach_vid.mov" type="video/mov">
+                    </video>
+                </figure>
+                
+            </div>
+        </main>
+        <section>
+            <hr>
+        </section>
+        <footer>
+            <nav>
+                <h3>Navigation</h3>
+                <button onclick="showContent()">Press me</button>
+            </nav>
+            <template>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <pre>
+                    _,........__
+                    ,-'            "`-.
+                  ,'                   `-.
+                ,'                        \
+              ,'                           .
+              .'\               ,"".       `
+             ._.'|             / |  `       \
+             |   |            `-.'  ||       `.
+             |   |            '-._,'||       | \
+             .`.,'             `..,'.'       , |`-.
+             l                       .'`.  _/  |   `.
+             `-.._'-   ,          _ _'   -" \  .     `
+        `."""""'-.`-...,---------','         `. `....__.
+        .'        `"-..___      __,'\          \  \     \
+        \_ .          |   `""""'    `.           . \     \
+          `.          |              `.          |  .     L
+            `.        |`--...________.'.        j   |     |
+              `._    .'      |          `.     .|   ,     |
+                 `--,\       .            `7""' |  ,      |
+                    ` `      `            /     |  |      |    _,-'"""`-.
+                     \ `.     .          /      |  '      |  ,'          `.
+                      \  v.__  .        '       .   \    /| /              \
+                       \/    `""\"""""""`.       \   \  /.''                |
+                        `        .        `._ ___,j.  `/ .-       ,---.     |
+                        ,`-.      \         ."     `.  |/        j     `    |
+                       /    `.     \       /         \ /         |     /    j
+                      |       `-.   7-.._ .          |"          '         /
+                      |          `./_    `|          |            .     _,'
+                      `.           / `----|          |-............`---'
+                        \          \      |          |
+                       ,'           )     `.         |
+                        7____,,..--'      /          |
+                                          `---.__,--.'</pre>
+                <figure>
+                    <figcaption>Squirtle Noise (CAUTION: VERY VERY loud)</figcaption>
+                    <audio controls muted>
+                        <source src="media/007-squirtle.mp3"> 
+                    </audio>
+                </figure>
+                
+                <div>
+                    <span>
+                        <svg width="600" height="70">
+                            <rect width="600" height="70" style="fill:rgb(99, 99, 153);stroke-width:10;stroke:rgb(0,0,0)" />
+                            <text fill="#ffffff" font-size="20" x="10" y="35">If the video doesn't load please click on the link to YouTube. Thank you.</text>
+                        </svg>
+                    </span>
+                    <span>
+                        <canvas id="my-canvas" width="300" height="150"></canvas>
+                    </span>
+                </div>
+            </template>
+            <p style="display: none;">
+                Thank you for grading all our labs :) 
+            </p>
+        </footer>
+    </body>
+</html>
