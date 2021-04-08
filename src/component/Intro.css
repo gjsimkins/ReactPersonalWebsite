@@ -1,0 +1,17 @@
+.intro {
+    background-image: url('./IMG_7371.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-txt {
+    text-align: center;
+    font-size: 7em;
+    color: white;
+}
+
+
+
