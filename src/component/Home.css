@@ -23,3 +23,33 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+.up-button {
+}
+
+.down-button {
+}
+
+.navbar {
+    position: absolute;
+    bottom: 50vh;
+    right: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+    margin: 3px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
