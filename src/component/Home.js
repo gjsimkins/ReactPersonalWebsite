@@ -8,16 +8,41 @@ import "./Home.css";
 
 export default class Home extends React.Component {
 
+    constructor() {
+        super();
+        this.numOfPages = 5;
+      }
+
     componentDidMount() {
+
+        function scrollTo(page) {
+            document.getElementById("wrapper").scrollTo({
+                top: page*window.innerHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        ///// Create dots
+        const navbar = document.getElementById("navbar");
+        const downButton = document.getElementById("down-button");
+        for (let i = 0; i < this.numOfPages; i++) {
+            let newDot = document.createElement("span");
+            newDot.className = "dot";
+            newDot.onclick = function() {scrollTo(i)}; 
+            navbar.insertBefore(newDot, downButton);
+        }
+        /////
+
+        // UPDATE DOTS
         const wrapper = document.getElementById("wrapper");
         const dots = document.getElementsByClassName("dot");
-        let scrollIndex = Math.floor(wrapper.scrollTop/window.innerHeight);
+        let scrollIndex = Math.floor(wrapper.scrollTop / window.innerHeight);
 
         dots[scrollIndex].className += " active";
 
         wrapper.onscroll = function (e) {
-            let newScrollIndex = Math.floor(wrapper.scrollTop/window.innerHeight);
-            if (scrollIndex != newScrollIndex){
+            let newScrollIndex = Math.floor(wrapper.scrollTop / window.innerHeight);
+            if (scrollIndex !== newScrollIndex) {
                 scrollIndex = newScrollIndex;
                 //console.log(scrollIndex);
                 for (let i = 0; i < dots.length; i++) {
@@ -26,7 +51,7 @@ export default class Home extends React.Component {
                 dots[scrollIndex].className += " active";
             }
         }
-
+        //////
 
     }
 
@@ -52,13 +77,8 @@ export default class Home extends React.Component {
                 <Profiles />
                 <AboutMe />
                 <MadeFrom />
-                <div className="navbar">
+                <div id="navbar" className="navbar">
                     <button id="up-button" className="up-button" onClick={scrollUp}>UP</button>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
                     <button id="down-button" className="down-button" onClick={scrollDown}>DOWN</button>
                 </div>
             </div>
