@@ -24,10 +24,12 @@
     scrollbar-width: none;  /* Firefox */
   }
 
-.up-button {
-}
-
-.down-button {
+.up-button, .down-button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 2em;
 }
 
 .navbar {
@@ -37,6 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .dot {

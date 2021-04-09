@@ -41,7 +41,7 @@ export default class Home extends React.Component {
         dots[scrollIndex].className += " active";
 
         wrapper.onscroll = function (e) {
-            let newScrollIndex = Math.floor(wrapper.scrollTop / window.innerHeight);
+            let newScrollIndex = Math.floor((wrapper.scrollTop + window.innerHeight/2)/ window.innerHeight);
             if (scrollIndex !== newScrollIndex) {
                 scrollIndex = newScrollIndex;
                 //console.log(scrollIndex);

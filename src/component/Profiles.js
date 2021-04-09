@@ -1,10 +1,10 @@
 import React from "react";
-import "./Intro.css"
+import "./Profiles.css"
 
 export default class Profiles extends React.Component {
     render() {
         return ( 
-            <section className="home-section">
+            <section className="profiles home-section">
                 <p>
                     Some of my profiles you might want to check out:
                     Linkedin, GitHub, etc.
