@@ -1,42 +1,20 @@
 import React from "react";
 import "./Projects.css";
+import ProjectCard from "./ProjectCard.js";
 
 export default class Projects extends React.Component {
     render () {
         return (
-            <section className="projects home-section">
-                <ul>
-                    <li>Hi</li>
-                    <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-  <p>content</p>
-                </ul>
-            </section>
+            <div className="projects home-section">
+                <h1 className="projects-title">Current and Past Projects</h1>
+                <div className="card-wrapper">
+                <ProjectCard title="PomoTimer" 
+                    description="Practiced agile in a team of 8 to produce a pomodoro timer web app." 
+                    timeline="Winter 2021" 
+                    link="https://asherbav.github.io/cse110-w21-group9/source/"/>
+                </div>
+                
+            </div>
         );
     }
 }
