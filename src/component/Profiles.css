@@ -1,3 +1,13 @@
 .profiles {
     background-color: darkgoldenrod;
 }
+
+.profile-image {
+    height: 180px;
+    margin: 25px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+}

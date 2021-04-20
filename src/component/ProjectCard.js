@@ -9,6 +9,9 @@ export default class ProjectCard extends React.Component {
                 <h3 className="timeline">{this.props.timeline}</h3>
                 <hr className="line"></hr>
                 <p className="description">{this.props.description}</p>
+                {/* <a className="project-card-link" href={this.props.link}>
+                    <span className="project-card-link"></span>
+                </a> */}
             </div>
         );
     }

@@ -13,10 +13,3 @@
     flex-wrap: wrap;
     overflow: auto;
 }
-
-.projects-title {
-    text-align: center;
-    color: white;
-    margin: 30px;
-    font-size: 60px;
-}

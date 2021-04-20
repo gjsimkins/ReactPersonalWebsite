@@ -56,3 +56,10 @@
   .active, .dot:hover {
     background-color: #717171;
   }
+
+.title {
+  text-align: center;
+  color: white;
+  margin: 30px;
+  font-size: 60px;
+}
