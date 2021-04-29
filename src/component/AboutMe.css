@@ -10,3 +10,14 @@
     color: white;
     font-size: 2rem;
 }
+
+
+.profile-image {
+    height: 180px;
+    margin: 25px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+}

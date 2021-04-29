@@ -1,7 +1,6 @@
 import React from "react";
 import Intro from "./Intro.js";
 import Projects from "./Projects.js";
-import Profiles from "./Profiles.js";
 import AboutMe from "./AboutMe.js";
 import MadeFrom from "./MadeFrom.js";
 import "./Home.css";
@@ -10,7 +9,7 @@ export default class Home extends React.Component {
 
     constructor() {
         super();
-        this.numOfPages = 5;
+        this.numOfPages = 4;
     }
 
     componentDidMount() {
@@ -38,7 +37,7 @@ export default class Home extends React.Component {
         const dots = document.getElementsByClassName("dot");
         const upButton = document.getElementById("up-button");
         let scrollIndex = Math.floor(wrapper.scrollTop / window.innerHeight);
-        const CTRL_COLORS = ["rgb(52,52,52)", "rgb(247,247,243)"];
+        // const CTRL_COLORS = ["rgb(52,52,52)", "rgb(247,247,243)"];
 
         dots[scrollIndex].className += " active";
 
@@ -50,10 +49,10 @@ export default class Home extends React.Component {
                 for (let i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
-                if (CTRL_COLORS[scrollIndex] != null) {
-                    upButton.style.color = CTRL_COLORS[scrollIndex];
-                    downButton.style.color = CTRL_COLORS[scrollIndex];
-                }
+                // if (CTRL_COLORS[scrollIndex] != null) {
+                //     upButton.style.color = CTRL_COLORS[scrollIndex];
+                //     downButton.style.color = CTRL_COLORS[scrollIndex];
+                // }
                 dots[scrollIndex].className += " active";
             }
         }
@@ -81,7 +80,6 @@ export default class Home extends React.Component {
             <div id="wrapper" className="wrapper">
                 <Intro />
                 <Projects />
-                <Profiles />
                 <AboutMe />
                 <MadeFrom />
                 <div id="navbar" className="navbar">
