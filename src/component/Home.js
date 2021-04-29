@@ -11,13 +11,13 @@ export default class Home extends React.Component {
     constructor() {
         super();
         this.numOfPages = 5;
-      }
+    }
 
     componentDidMount() {
 
         function scrollTo(page) {
             document.getElementById("wrapper").scrollTo({
-                top: page*window.innerHeight,
+                top: page * window.innerHeight,
                 behavior: 'smooth'
             });
         }
@@ -28,7 +28,7 @@ export default class Home extends React.Component {
         for (let i = 0; i < this.numOfPages; i++) {
             let newDot = document.createElement("span");
             newDot.className = "dot";
-            newDot.onclick = function() {scrollTo(i)}; 
+            newDot.onclick = function () { scrollTo(i) };
             navbar.insertBefore(newDot, downButton);
         }
         /////
@@ -36,17 +36,23 @@ export default class Home extends React.Component {
         // UPDATE DOTS
         const wrapper = document.getElementById("wrapper");
         const dots = document.getElementsByClassName("dot");
+        const upButton = document.getElementById("up-button");
         let scrollIndex = Math.floor(wrapper.scrollTop / window.innerHeight);
+        const CTRL_COLORS = ["rgb(52,52,52)", "rgb(247,247,243)"];
 
         dots[scrollIndex].className += " active";
 
         wrapper.onscroll = function (e) {
-            let newScrollIndex = Math.floor((wrapper.scrollTop + window.innerHeight/2)/ window.innerHeight);
+            let newScrollIndex = Math.floor((wrapper.scrollTop + window.innerHeight / 2) / window.innerHeight);
             if (scrollIndex !== newScrollIndex) {
                 scrollIndex = newScrollIndex;
                 //console.log(scrollIndex);
                 for (let i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
+                }
+                if (CTRL_COLORS[scrollIndex] != null) {
+                    upButton.style.color = CTRL_COLORS[scrollIndex];
+                    downButton.style.color = CTRL_COLORS[scrollIndex];
                 }
                 dots[scrollIndex].className += " active";
             }
@@ -56,6 +62,7 @@ export default class Home extends React.Component {
     }
 
     render() {
+
         function scrollUp() {
             document.getElementById("wrapper").scrollBy({
                 top: -window.innerHeight,

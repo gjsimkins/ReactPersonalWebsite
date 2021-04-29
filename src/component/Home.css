@@ -28,8 +28,9 @@
     background: none;
     border: 0;
     cursor: pointer;
-    color: white;
+    color: rgb(52, 52, 52);;
     font-size: 2em;
+    font-weight: 600;
 }
 
 .navbar {
@@ -59,7 +60,7 @@
 
 .title {
   text-align: center;
-  color: white;
+  color: #343434;
   margin: 30px;
   font-size: 60px;
 }
