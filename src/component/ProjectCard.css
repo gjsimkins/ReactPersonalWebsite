@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: white;
+    background-color: #f3f3f3;
     min-height: 300px;
     padding: 10px 10px 10px 10px;
     margin: 20px 20px 20px 20px;
     border-radius: 20px;
     min-width: 30%;
     max-width: 50%;
-    box-shadow: 10px 10px 20px rgb(54, 54, 54);
+    box-shadow: 10px 10px 00px rgb(54, 54, 54);
 }
 
 .project-card-link {
@@ -20,10 +20,12 @@
 
 .project-card-title {
     font-size: 2.5rem;
+    color: rgb(54, 54, 54);
 }
 
 .timeline {
     margin-bottom: 5px;
+    color: rgb(54, 54, 54);
 }
 
 .line {
@@ -34,4 +36,5 @@
     padding: 10px;
     width: 85%;
     text-align: center;
+    color: rgb(54, 54, 54);
 }
