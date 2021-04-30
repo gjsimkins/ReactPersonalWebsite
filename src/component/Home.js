@@ -3,7 +3,6 @@ import Intro from "./Intro.js";
 import Projects from "./Projects.js";
 import AboutMe from "./AboutMe.js";
 import MadeFrom from "./MadeFrom.js";
-import "./Home.css";
 
 export default class Home extends React.Component {
 
