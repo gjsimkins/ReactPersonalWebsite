@@ -1,5 +1,4 @@
 import React from "react";
-import "./MadeFrom.css"
 
 export default class MadeFrom extends React.Component {
     render() {

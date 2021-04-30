@@ -1,5 +1,4 @@
 import React from "react";
-import "./Projects.css";
 import ProjectCard from "./ProjectCard.js";
 
 export default class Projects extends React.Component {
