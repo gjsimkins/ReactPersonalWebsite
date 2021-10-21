@@ -2,10 +2,10 @@ import React from "react";
 
 export default class MadeFrom extends React.Component {
     render() {
-        return ( 
+        return (
             <div className="made-from home-section">
-                <h1 className="title">Made from scratch using React JS, CSS, and HTML</h1>
-                <p>Made from scratch using React JS, CSS, and HTML</p>
+                <h1 className="title">Made from scratch using React</h1>
+                <p>Thank you for checking it out! :)</p>
             </div>
         );
     }
