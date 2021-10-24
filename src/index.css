@@ -13,10 +13,6 @@ body, html {
     height: 100%;
 }
 
-#root {
-    height: 100%;
-}
-
 /* Universal */
 
 .wrapper {
@@ -150,7 +146,8 @@ body, html {
 }
 
 .about-me-p {
-    width: 75%;
+    width: 50%;
+    padding-right: 5%;
     color: var(--default-text);
     font-size: 2rem;
 }
@@ -168,6 +165,16 @@ body, html {
 .profile-section {
     display: flex;
     justify-content: center;
+}
+
+.resume-btn {
+    color: var(--default-background);
+    background-color: var(--default-text);
+    border: 1px sold black;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-top: 10%;
 }
 
 /* Made From */

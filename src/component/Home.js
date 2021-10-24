@@ -34,7 +34,6 @@ export default class Home extends React.Component {
         // UPDATE DOTS
         const wrapper = document.getElementById("wrapper");
         const dots = document.getElementsByClassName("dot");
-        const upButton = document.getElementById("up-button");
         let scrollIndex = Math.floor(wrapper.scrollTop / window.innerHeight);
         // const CTRL_COLORS = ["rgb(52,52,52)", "rgb(247,247,243)"];
 
