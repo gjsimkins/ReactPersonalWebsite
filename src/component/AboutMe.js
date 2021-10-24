@@ -24,8 +24,8 @@ export default class AboutMe extends React.Component {
                     </div>
                     <div className="about-me-R">
                         <p className="about-me-p">
-                            I am an aspiring Software Developer trying to figure out what exactly I want to do.Currently I am studing Computer Science at UCSD.
-                            I have worked with Java, C++, React.js, and the basics of web development.When I'm not coding I enjoy playing video games, playing basketball,
+                            I am an aspiring Software Developer trying to figure out what exactly I want to do. Currently, I am studing Computer Science at UCSD.
+                            I have worked with Java, C++, React, and the basics of web development. When I'm not coding I enjoy playing video games, playing basketball,
                             and hanging out with friends.
                         </p>
                         <a className="resume-btn" href={resume} target="_blank" rel="noreferrer">Resume</a>
