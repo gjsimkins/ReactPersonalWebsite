@@ -78,8 +78,8 @@ export default class Home extends React.Component {
         return (
             <div id="wrapper" className="wrapper">
                 <Intro />
-                <Projects />
                 <AboutMe />
+                <Projects />
                 <MadeFrom />
                 <div id="navbar" className="navbar">
                     <button id="up-button" className="up-button" onClick={scrollUp}>UP</button>

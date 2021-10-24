@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard.js";
 
-import pomoImg from "./imgs/Pomo.jpg";
+import pomoImg from "../media/Pomo.jpg";
 
 export default class Projects extends React.Component {
     render() {
