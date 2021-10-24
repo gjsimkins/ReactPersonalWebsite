@@ -1,8 +1,8 @@
 import React from "react";
 
-import gitLogo from "./imgs/GitHub-Mark-120px-plus.png";
-import linkedinLogo from "./imgs/LI-In-Bug.png";
-import headshot from "./imgs/headshot.png";
+import gitLogo from "../media/GitHub-Mark-120px-plus.png";
+import linkedinLogo from "../media/LI-In-Bug.png";
+import headshot from "../media/headshot.png";
 
 export default class AboutMe extends React.Component {
     render() {
@@ -12,13 +12,6 @@ export default class AboutMe extends React.Component {
                 <div className="about-me-body">
                     <div className="about-me-L">
                         <img src={headshot} className="headshot"></img>
-                    </div>
-                    <div className="about-me-R">
-                        <p className="about-me-p">
-                            I am a Computer Science major at UCSD, class of 2023. I am an aspiring Software Developer trying to figure out what exactly I want to do.
-                            I have worked with Java, C++, React.js, and the basics of web development. When I'm not coding I enjoy playing video games, playing basketball,
-                            and hanging out with friends.
-                        </p>
                         <div className="profile-section">
                             <a href="https://github.com/gjsimkins" target="_blank">
                                 <img src={gitLogo} className="profile-image" />
@@ -27,6 +20,14 @@ export default class AboutMe extends React.Component {
                                 <img src={linkedinLogo} className="profile-image" />
                             </a>
                         </div>
+                    </div>
+                    <div className="about-me-R">
+                        <p className="about-me-p">
+                            I am an aspiring Software Developer trying to figure out what exactly I want to do. Currently I am studing Computer Science at UCSD.
+                            I have worked with Java, C++, React.js, and the basics of web development. When I'm not coding I enjoy playing video games, playing basketball,
+                            and hanging out with friends.
+                        </p>
+
                     </div>
 
                 </div>
